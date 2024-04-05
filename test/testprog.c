@@ -252,9 +252,11 @@ static void hook_function_calls_in_library(enum open_mode open_mode)
     plthook_t *plthook;
     void *handle;
 #if defined _WIN32 || defined __CYGWIN__
-    const char *filename = "libtest.dll";
+    const char *filename = "plthook_libtest.dll";
+#elif defined __APPLE__
+    const char *filename = "libplthook_libtest.dylib";
 #else
-    const char *filename = "libtest.so";
+    const char *filename = "libplthook_libtest.so";
 #endif
 #ifndef WIN32
     void *address;
