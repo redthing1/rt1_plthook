@@ -1,3 +1,15 @@
+# rt1_plthook
+
+## usage: macos
+
+build and run tests:
+```sh
+cd test
+meson setup build-macos
+ninja -C build-macos
+./run_tests.sh ./build-macos
+```
+
 PLTHook
 =======
 
