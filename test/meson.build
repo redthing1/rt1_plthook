@@ -1,16 +1,3 @@
-project('plthook_test', 'c',
-  version : '0.1',
-  default_options : [
-    'warning_level=3',
-  ],
-)
-
-host_os = host_machine.system()
-
-# depend on plthook
-plthook_proj = subproject('plthook')
-plthook_dep = plthook_proj.get_variable('plthook_dep')
-
 plthook_libtest_sources = [
     './libtest.c',
 ]

@@ -4,10 +4,9 @@
 
 build and run tests:
 ```sh
-cd test
 meson setup build-macos
 ninja -C build-macos
-./run_tests.sh ./build-macos
+./test/run_tests.sh ./build-macos
 ```
 
 PLTHook
